@@ -12,10 +12,10 @@ app.use(cors())
 app.use(express.json())
 
 const guitarrasRouter = require("./routes/guitarras")
-const pokeRouter = require('./routes/apiExterna')
+const peliculasRouter = require('./routes/apiExterna')
 
 app.use("/instrumentos/", guitarrasRouter)
-app.use("/api/", pokeRouter)
+app.use("/peliculas/", peliculasRouter)
 
 connect();
 module.exports= app

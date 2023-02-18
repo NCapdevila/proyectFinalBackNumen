@@ -1,8 +1,8 @@
 const axios = require('axios')
 
-const consultaAxios = async (req, res) =>{
+const consultaPelisPopulares = async (req, res) =>{
     try {
-        const resultado = await axios.get(`https://pokeapi.co/api/v2/pokemon/${req.params.nombre}`)
+        const resultado = await axios.get("https://api.themoviedb.org/3/movie/popular?api_key=390a2a575f691440ebbaef0c93bb0baf&language=es-ES&page=1")
         res.json({
             response: resultado.data,
             status: resultado.status
@@ -15,4 +15,4 @@ const consultaAxios = async (req, res) =>{
     }
 }
 
-module.exports={consultaAxios}
+module.exports={consultaPelisPopulares}
