@@ -16,7 +16,7 @@ router.post("/guitarras/crear",[
     check("precio").not().isEmpty().withMessage("El campo precio de la guitarra es requerido").isLength({min:1}).withMessage("El precio tiene que tener un valor"),
     check("cantidadStock").not().isEmpty().withMessage("Es necesario conocer el stock de la guitarra"),
     check("compraEnCuotas").not().isEmpty().withMessage("Es necesario conocer si se puede comprar en cuotas la guitarra")
-], Controller.guardarGuitarra)
+],validarOrigen, Controller.guardarGuitarra)
 
 router.put("/guitarras/editar/:id",validarID,[
     check("marca").not().isEmpty().withMessage("El campo marca de la guitarra es requerido para actualizar"),
