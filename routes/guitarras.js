@@ -5,6 +5,8 @@ const { validarID } = require('../middleware/validarID')
 const { validarOrigen } = require('../middleware/validarOrigen')
 const {check}=require('express-validator')
 
+router.get('/', Controller.indexRouter)
+
 router.get("/guitarras/vertodo", Controller.verTodasGuitarras)
 router.get("/guitarras/ver/:id",validarID, Controller.verGuitarra)
 

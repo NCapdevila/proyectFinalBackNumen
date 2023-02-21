@@ -1,6 +1,10 @@
 const { Guitarras } = require("../models/Guitarras")
 const { validationResult } =require('express-validator')
 
+const indexRouter = (req, res)=>{
+    res.send("Bienvenido")
+}
+
 
 const verTodasGuitarras = async(req, res) =>{
     try {
@@ -68,4 +72,4 @@ const borrarTodasLasGuitarras = async(req, res)=>{
     }
 }
 
-module.exports={verTodasGuitarras, verGuitarra, guardarGuitarra, editarGuitarra, borrarGuitarra, borrarTodasLasGuitarras}
+module.exports={verTodasGuitarras, verGuitarra, guardarGuitarra, editarGuitarra, borrarGuitarra, borrarTodasLasGuitarras, indexRouter}

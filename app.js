@@ -11,9 +11,12 @@ app.use(logger("dev"))
 app.use(cors())
 app.use(express.json())
 
+
 const guitarrasRouter = require("./routes/guitarras")
 const peliculasRouter = require('./routes/apiExterna')
+const indexRouter = require('./routes')
 
+app.use('/', indexRouter)
 app.use("/instrumentos/", guitarrasRouter)
 app.use("/peliculas/", peliculasRouter)
 
