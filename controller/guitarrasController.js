@@ -1,10 +1,10 @@
 const { Guitarras } = require("../models/Guitarras")
 const { validationResult } =require('express-validator')
 
+
 const indexRouter = (req, res)=>{
     res.send("Bienvenido, visita la documentación: https://github.com/NCapdevila/proyectFinalBackNumen")
 }
-
 
 const verTodasGuitarras = async(req, res) =>{
     try {

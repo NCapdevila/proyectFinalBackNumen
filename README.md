@@ -33,21 +33,21 @@ To run tests, run the following command
 Performing the test from Postman
 
 Routes:
-http://localhost8080/instrumentos/vertodo (method get)
+https://backendnumen.onrender.com/instrumentos/vertodo (method get)
 
-http://localhost8080/instrumentos/ver/:id (method get)(requires req.params.id)
+https://backendnumen.onrender.com/instrumentos/ver/:id (method get)(requires req.params.id)
 
-http://localhost8080/instrumentos/crear (method post) (requires req.body)
+https://backendnumen.onrender.com/instrumentos/crear (method post) (requires req.body)
 
-http://localhost8080/instrumentos/editar/:id (method put) (requires req.params.id, req.body)
+https://backendnumen.onrender.com/instrumentos/editar/:id (method put) (requires req.params.id, req.body)
 
-http://localhost8080/instrumentos/borrar/:id (method delete) (requires req.params.id)
+https://backendnumen.onrender.com/instrumentos/borrar/:id (method delete) (requires req.params.id)
 
-http://localhost8080/instrumentos/borrar (method delete)
+https://backendnumen.onrender.com/instrumentos/borrar (method delete)
 
 External Api:
 
-http://localhost8080/peliculas/populares (method get)
+https://backendnumen.onrender.com/peliculas/populares (method get)
 
 
 
