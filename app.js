@@ -14,7 +14,7 @@ app.use(express.json())
 
 const guitarrasRouter = require("./routes/guitarras")
 const peliculasRouter = require('./routes/apiExterna')
-const indexRouter = require('./routes')
+const indexRouter = require('./routes/apiExterna')
 
 app.use('/', indexRouter)
 app.use("/instrumentos/", guitarrasRouter)
