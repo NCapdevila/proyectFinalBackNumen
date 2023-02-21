@@ -16,7 +16,7 @@ Connection with external api
 
 Data for the connection in .env
 
-
+## Deploy in Render
 
 ## Running Tests
 
@@ -33,17 +33,18 @@ To run tests, run the following command
 Performing the test from Postman
 
 Routes:
-https://backendnumen.onrender.com/instrumentos/vertodo (method get)
 
-https://backendnumen.onrender.com/instrumentos/ver/:id (method get)(requires req.params.id)
+https://backendnumen.onrender.com/instrumentos/guitarras/vertodo (method get)
 
-https://backendnumen.onrender.com/instrumentos/crear (method post) (requires req.body)
+https://backendnumen.onrender.com/instrumentos/guitarras/ver/:id (method get)(requires req.params.id)
 
-https://backendnumen.onrender.com/instrumentos/editar/:id (method put) (requires req.params.id, req.body)
+https://backendnumen.onrender.com/instrumentos/guitarras/crear (method post) (requires req.body)
 
-https://backendnumen.onrender.com/instrumentos/borrar/:id (method delete) (requires req.params.id)
+https://backendnumen.onrender.com/instrumentos/guitarras/editar/:id (method put) (requires req.params.id, req.body)
 
-https://backendnumen.onrender.com/instrumentos/borrar (method delete)
+https://backendnumen.onrender.com/instrumentos/guitarras/borrar/:id (method delete) (requires req.params.id)
+
+https://backendnumen.onrender.com/instrumentos/guitarras/borrar (method delete)
 
 External Api:
 
