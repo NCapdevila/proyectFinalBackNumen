@@ -23,6 +23,7 @@ Data for the connection in .env
 To run tests, run the following command
 
 ```bash
+  npm install (install dependencies)
   npm run dev
 ```
 
@@ -43,6 +44,10 @@ http://localhost8080/instrumentos/editar/:id (method put) (requires req.params.i
 http://localhost8080/instrumentos/borrar/:id (method delete) (requires req.params.id)
 
 http://localhost8080/instrumentos/borrar (method delete)
+
+External Api:
+
+http://localhost8080/peliculas/populares (method get)
 
 
 
