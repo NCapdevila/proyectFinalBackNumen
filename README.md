@@ -1,52 +1,54 @@
 
-# Proyect Final BackEnd Numen
+# Proyecto Final BackEnd Numen
 
 
-Creation of a server in node that uses routes for communication with the database
+Creación de un servidor en nodeJs que utiliza rutas con sus respectivos métodos http para la comunicación con la base de datos
 
-Routes that make up a crud
+Base de datos en MongoDb
 
-Route validation with express-validator
+Rutas que forman un crud
 
-Middleware creation
+Validación de rutas con express-validator
 
-Connection with external api
+Desarrollo de middleware propio
+
+Conexión con api externa
 
 ---
 
-Data for the connection in .env
+Datos para la conexión en .env
 
-## Deploy in Render
+## Deploy en Render
 
-## Running Tests
+## Running Tests(De ser necesario)
 
-To run tests, run the following command
+Para ejecutar pruebas, ejecute el siguiente comando
 
 ```bash
-  npm install (install dependencies)
+  npm install
   npm run dev
 ```
 
 
 ## Test router
 
-Performing the test from Postman
+Realizar las pruebas desde Postman
 
 Routes:
 
 https://backendnumen.onrender.com/instrumentos/guitarras/vertodo (method get)
 
-https://backendnumen.onrender.com/instrumentos/guitarras/ver/:id (method get)(requires req.params.id)
+https://backendnumen.onrender.com/instrumentos/guitarras/ver/:id (method get)(requiere req.params.id)
 
-https://backendnumen.onrender.com/instrumentos/guitarras/crear (method post) (requires req.body)
+https://backendnumen.onrender.com/instrumentos/guitarras/crear (method post) (requiere req.body)
 
-https://backendnumen.onrender.com/instrumentos/guitarras/editar/:id (method put) (requires req.params.id, req.body)
+https://backendnumen.onrender.com/instrumentos/guitarras/editar/:id (method put) (requiere req.params.id, req.body)
 
-https://backendnumen.onrender.com/instrumentos/guitarras/borrar/:id (method delete) (requires req.params.id)
+https://backendnumen.onrender.com/instrumentos/guitarras/borrar/:id (method delete) (requiere req.params.id)
 
 https://backendnumen.onrender.com/instrumentos/guitarras/borrar (method delete)
 
-External Api:
+Api Externa:
 
 https://backendnumen.onrender.com/peliculas/populares (method get)
 
