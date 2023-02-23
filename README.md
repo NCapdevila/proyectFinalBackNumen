@@ -36,6 +36,10 @@ Realizar las pruebas desde Postman
 
 Routes:
 
+Al ingresar por primera vez al servidor, se demora ya que esta iniciando la conexión 
+
+https://backendnumen.onrender.com (index)
+
 https://backendnumen.onrender.com/instrumentos/guitarras/vertodo (method get)
 
 https://backendnumen.onrender.com/instrumentos/guitarras/ver/:id (method get)(requiere req.params.id)
